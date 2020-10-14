@@ -14,6 +14,7 @@ def run():
     parser.add_argument('-p', '--pages', type=int, help="Number of pages to download", default=10)
     parser.add_argument('-g', '--group', action='store_true', help="Use group scraper")
     parser.add_argument('-v', '--verbose', action='count', help="Enable logging", default=0)
+    parser.add_argument('-c', '--credentials', type=str, help="Credentials tuple user, password")
     parser.add_argument(
         '--encoding', action='store', help="Encoding for the output file", default=None
     )
